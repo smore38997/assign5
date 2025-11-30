@@ -1,9 +1,5 @@
 import random
 def randomized_partition(arr, low, high):
-    """
-    Randomly selects a pivot index, swaps it with the last element,
-    and then performs the Lomuto partition.
-    """
     pivot_index = random.randint(low, high)
     arr[pivot_index], arr[high] = arr[high], arr[pivot_index]  # Move pivot to end
     
